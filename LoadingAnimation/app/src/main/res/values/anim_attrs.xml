@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OwnDrawLoadingView">
+        <attr name="color" format="color|reference" />
+        <attr name="crossDotMargin" format="float" />
+        <attr name="crossWidth" format="float" />
+        <attr name="scaleTo" format="float" />
+        <attr name="cornerRadius" format="float" />
+        <attr name="animationDelay" format="float" />
+        <attr name="animationDuration" format="float" />
+    </declare-styleable>
+</resources>

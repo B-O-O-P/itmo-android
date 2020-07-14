@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AndroidHW1-Calculator</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="div">/</string>
+    <string name="mul">*</string>
+    <string name="minus">-</string>
+    <string name="_0">0</string>
+    <string name="dot">.</string>
+    <string name="plus">+</string>
+    <string name="eq">=</string>
+    <string name="OpenBracket">(</string>
+    <string name="CloseBracket">)</string>
+    <string name="del">DEL</string>
+    <string name="saveText">SAVE</string>
+    <string name="loadText">LOAD</string>
+    <string name="_0_0">0.0</string>
+    <string name="IS_DOUBLE">IS_DOUBLE</string>
+    <string name="LAST_OP">LAST_OP</string>
+    <string name="SAVED_RES">SAVED RES</string>
+    <string name="RESULT">RESULT</string>
+    <string name="EXPR">EXPR</string>
+    <string name="_was_saved">was saved</string>
+    <string name="No_load">Nothing to load</string>
+    <string name="No_save">Nothing to save</string>
+</resources>

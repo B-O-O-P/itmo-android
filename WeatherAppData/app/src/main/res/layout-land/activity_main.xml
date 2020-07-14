@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/mainBackGroundColor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?attr/TitleBackGroundColor"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/app_name"
+        android:textColor="?attr/mainTextColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_refresh"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_weight="1" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/main_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/app_options_layout"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintVertical_weight="5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_info_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/main_refresh"
+            app:layout_constraintEnd_toStartOf="@+id/paddingRight"
+            app:layout_constraintStart_toEndOf="@id/paddingLeft"
+            app:layout_constraintTop_toTopOf="@+id/main_refresh"
+            android:padding="4dp"
+            app:layout_constraintVertical_weight="5">
+
+            <ImageView
+                android:id="@+id/main_forecast_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/main_forecast_image"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/current_location"
+                app:layout_constraintEnd_toStartOf="@id/general_info_layout"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toEndOf="@id/paddingLeft"
+                app:layout_constraintTop_toTopOf="@+id/main_info_layout"
+                app:layout_constraintVertical_weight="10" />
+
+            <TextView
+                android:id="@+id/current_temperature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:padding="4dp"
+                android:textColor="?attr/mainTextColor"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toBottomOf="@+id/main_forecast_image"
+                app:layout_constraintEnd_toEndOf="@id/main_forecast_image"
+                app:layout_constraintStart_toStartOf="@id/main_forecast_image" />
+
+            <TextView
+                android:id="@+id/current_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="?attr/mainTextColor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/current_weather_forecast"
+                app:layout_constraintEnd_toEndOf="@id/main_forecast_image"
+                app:layout_constraintStart_toStartOf="@id/main_forecast_image"
+                app:layout_constraintTop_toBottomOf="@+id/main_forecast_image"
+                app:layout_constraintVertical_weight="2" />
+
+            <TextView
+                android:id="@+id/current_weather_forecast"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="?attr/mainTextColor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/main_info_layout"
+                app:layout_constraintEnd_toEndOf="@id/current_location"
+                app:layout_constraintStart_toStartOf="@id/current_location"
+                app:layout_constraintTop_toBottomOf="@+id/current_location"
+                app:layout_constraintVertical_weight="2" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/general_info_layout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/daily_info_list"
+                app:layout_constraintEnd_toStartOf="@id/paddingRight"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toEndOf="@id/main_forecast_image"
+                app:layout_constraintTop_toTopOf="@id/main_info_layout"
+                app:layout_constraintVertical_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/general_forecast_item_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_rounded_corners"
+                    app:layout_constraintEnd_toStartOf="@+id/general_forecast_item_2"
+                    app:layout_constraintHorizontal_weight="2"
+                    app:layout_constraintStart_toStartOf="@id/general_info_layout">
+
+                    <include layout="@layout/general_forecast_item" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/general_forecast_item_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="?attr/secondaryBackGroundColor"
+                    app:layout_constraintEnd_toStartOf="@+id/general_forecast_item_3"
+                    app:layout_constraintHorizontal_weight="3"
+                    app:layout_constraintStart_toEndOf="@+id/general_forecast_item_1">
+
+                    <include layout="@layout/general_forecast_item" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/general_forecast_item_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/right_rounded_corners"
+                    app:layout_constraintEnd_toEndOf="@id/general_info_layout"
+                    app:layout_constraintHorizontal_weight="2"
+                    app:layout_constraintStart_toEndOf="@+id/general_forecast_item_2">
+
+                    <include layout="@layout/general_forecast_item" />
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/daily_info_list"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:background="@drawable/rounded_corners"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/main_info_layout"
+                app:layout_constraintEnd_toEndOf="@id/general_info_layout"
+                app:layout_constraintEnd_toStartOf="@id/paddingRight"
+                app:layout_constraintHorizontal_weight="2"
+                app:layout_constraintStart_toStartOf="@+id/general_info_layout"
+                app:layout_constraintTop_toBottomOf="@+id/general_info_layout"
+                app:layout_constraintVertical_weight="1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/paddingLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.02" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/paddingRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.98" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/app_options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/TitleBackGroundColor"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconTint="@color/bottom_nav_menu_color_selector"
+        app:itemTextColor="?attr/mainTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_refresh"
+        app:layout_constraintVertical_weight="1"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="?attr/TitleBackGroundColor"
+        android:contentDescription="@string/changeTheme"
+        android:onClick="onChangeThemeClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toTopOf="@id/title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

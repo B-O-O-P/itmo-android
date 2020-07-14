@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="apps_button_description">Apps button</string>
+    <string name="map_marker_image_button_description">Image for map marker icon</string>
+    <string name="settings_image_button_description">Image for settings button</string>
+    <string name="home_image_button_description">Image for main home button</string>
+    <string name="general_item_image">Image for general forecast value</string>
+    <string name="hour_forecast_item_image_value">Image for hour forecast</string>
+    <string name="main_forecast_image">Image for main forecast</string>
+    <string name="SaintPetersburg">Saint-Petersburg, Russia</string>
+    <string name="forecast_cloudy">Cloudy</string>
+    <string name="Celsius">°C</string>
+    <string name="WindFlow">Wind Flow</string>
+    <string name="Precipitation">Precipitation</string>
+    <string name="Humidity">Humidity</string>
+    <string name="hourSuffix">:00</string>
+    <string name="PostMeridiem">PM</string>
+    <string name="forecast_rainy">Rainy</string>
+    <string name="forecast_sunny">Sunny</string>
+    <string name="forecast_windy">Windy</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+    <string name="day_sunday">Sunday</string>
+    <string name="day_Monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="changeTheme">Button for changing theme</string>
+    <string name="RESTORE_THEME">RESTORE_THEME</string>
+    <string name="theme_light">light</string>
+    <string name="theme_dark">dark</string>
+    <string name="title_home">Home</string>
+    <string name="title_marker">Map</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_apps">Apps</string>
+</resources>

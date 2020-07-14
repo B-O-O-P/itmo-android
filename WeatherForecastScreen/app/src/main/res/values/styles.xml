@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="TitleBackGroundColor">@color/White</item>
+        <item name="secondaryBackGroundColor">@color/White</item>
+        <item name="mainBackGroundColor">@color/VeryLightBlueBackGroundColor</item>
+        <item name="mainTextColor">@color/LightGrayTextColor</item>
+        <item name="forecastTextColor">@color/LightBlueTextColor</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="TitleBackGroundColor">@color/DeepNightBackgroundColor</item>
+        <item name="secondaryBackGroundColor">@color/QuiteNightBackgroundColor</item>
+        <item name="mainBackGroundColor">@color/NightBackgroundColor</item>
+        <item name="mainTextColor">@color/LightNightTextColor</item>
+        <item name="forecastTextColor">@color/LightBlueTextColor</item>
+    </style>
+</resources>

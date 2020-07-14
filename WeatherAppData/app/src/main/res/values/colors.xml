@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="VeryLightBlueBackGroundColor">#F4F9FF</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="LightGrayTextColor">#999d9f</color>
+    <color name="LightBlueTextColor">#8bc7fe</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="QuiteNightBackgroundColor">#354066</color>
+    <color name="NightBackgroundColor">#242e4f</color>
+    <color name="LightNightTextColor">#d4d6dd</color>
+    <color name="DeepNightBackgroundColor">#222e4f</color>
+</resources>
