@@ -6,7 +6,7 @@
 
 ![screenshot 2](images/screenshot2.png)
 
-Выглядеть должно примерно вот ![так](https://github.com/gerra/ITMO-Android-19/blob/master/Animations/2019-10-18%2003.56.54.mp4) (это незаскейленная версия) и ![так](https://github.com/gerra/ITMO-Android-19/blob/master/Animations/2019-10-18%2003.16.53.mp4) (это заскейленная версия).
+Выглядеть должно примерно вот [так](https://github.com/gerra/ITMO-Android-19/blob/master/Animations/2019-10-18%2003.56.54.mp4) (это незаскейленная версия) и [так](https://github.com/gerra/ITMO-Android-19/blob/master/Animations/2019-10-18%2003.16.53.mp4) (это заскейленная версия).
 
 У вас должна получиться бесконечно анимирующаяся вьюшка.
 
